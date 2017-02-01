@@ -44,12 +44,12 @@ La Communication Serveur/Clients se fait pour le moment via une connection TCP/I
 
 ###### Trame de demande:
 >`<q>`
-><p>Le serveur envoi une demande d'actalisation au client.</p>
+><p>Le serveur envoi une demande d'actualisation au client.</p>
 
 ###### Trame de commande:
 >`<c,"ID","valeur">`
-><p>Le serveur envoi une commande identifier par un ID numerique suivie par la valeur à appliquer, le tout séparer par une virgule. </p>
-> <p>A l'heure actuel, les commandes disponible sont les suivante</p>
+><p>Le serveur envoi une commande identifiée par un ID numerique suivi par la valeur à appliquée, le tout séparé par une virgule. </p>
+> <p>A l'heure actuelle, les commandes disponible sont les suivantes</p>
 >1. Lumiere<br> ID => 1<br>Commandes:
 >   * 0 = Eteindre
 >   * 1 = Allumer
@@ -62,8 +62,8 @@ La Communication Serveur/Clients se fait pour le moment via une connection TCP/I
 >   * 0 = Eteindre
 >   * 1 = Allumer  
 
-###### Trame de reponsse:
->>La trame de reponsse suivante est donnée pour les modules que nous avons conçu. Cette trame pourras etre modifier afin de d'accepter des module divers.
+###### Trame de réponse:
+>>La trame de réponse suivante est donnée pour les modules que nous avons conçu. Cette trame pourra etre modifier afin d'accepter des modules divers.
 
 >`<r,"IDmodule","Temperature","TemperatureCible","Humidité","EtatLumiere","EtatVollet","ConsoEau","EtatChauffage">`
 >
