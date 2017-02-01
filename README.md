@@ -32,3 +32,8 @@ Les différentes bibliotèques utilisées sont présente dans Libraries, les sou
 
 Pour les Huzzahs, le programe est déveloper en C++/Arduino via PlatforIO (extention de Atom).
 Les sources sont également disponible dans Sources.
+
+
+###Communication
+
+La Communication entre la 
