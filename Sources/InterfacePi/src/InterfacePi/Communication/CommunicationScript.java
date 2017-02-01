@@ -1,10 +1,9 @@
 package InterfacePi.Communication;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import InterfacePi.Communication.Type.Blynk;
 import InterfacePi.Main;
-import org.controlsfx.control.MaskerPane;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.*;
 import java.net.InetAddress;

@@ -5,7 +5,6 @@ import InterfacePi.Interface.Setting.ModuleController;
 import InterfacePi.Main;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.controlsfx.control.MaskerPane;
 
 import java.io.*;
 import java.nio.file.Files;

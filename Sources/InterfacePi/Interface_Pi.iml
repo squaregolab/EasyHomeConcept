@@ -7,11 +7,11 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="controlsfx-8.40.12" level="project" />
-    <orderEntry type="library" name="log4j-core-2.7" level="project" />
-    <orderEntry type="library" name="Medusa-7.3-javadoc" level="project" />
-    <orderEntry type="library" name="pi4j-core-javadoc" level="project" />
     <orderEntry type="library" name="org.glassfish.jersey.core:jersey-client:2.8" level="project" />
     <orderEntry type="library" name="org.glassfish.jersey.media:jersey-media-json-jackson:2.8" level="project" />
+    <orderEntry type="library" name="Medusa-7.3-javadoc" level="project" />
+    <orderEntry type="library" name="pi4j-core-javadoc" level="project" />
+    <orderEntry type="library" name="controlsfx-8.40.12" level="project" />
+    <orderEntry type="library" name="log4j-api-2.7-javadoc" level="project" />
   </component>
 </module>

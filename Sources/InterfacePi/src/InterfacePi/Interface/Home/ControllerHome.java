@@ -4,49 +4,30 @@ package InterfacePi.Interface.Home;
  * Sample Skeleton for 'home.fxml' ControllerHome Class
  */
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.net.URL;
-import java.nio.file.Path;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.ResourceBundle;
-
-import InterfacePi.Communication.LoadHistory;
-import InterfacePi.Communication.ModuleLauncher;
-import InterfacePi.Communication.Type.HistoryData;
-import InterfacePi.Interface.ExceptionAlert;
 import InterfacePi.Main;
 import javafx.application.Platform;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.collections.ObservableList;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
-import javafx.scene.control.Tab;
-import javafx.scene.control.TabPane;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
-import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.controlsfx.control.MaskerPane;
 import org.controlsfx.control.NotificationPane;
 import org.controlsfx.control.action.Action;
-import sun.awt.windows.ThemeReader;
+
+import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 import static InterfacePi.Main.launcher;
 

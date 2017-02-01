@@ -1,7 +1,9 @@
 package InterfacePi;
 
 
-import InterfacePi.Communication.*;
+import InterfacePi.Communication.ClientS;
+import InterfacePi.Communication.CommunicationScript;
+import InterfacePi.Communication.ModuleLauncher;
 import com.pi4j.io.gpio.*;
 import com.pi4j.system.SystemInfo;
 import javafx.application.Application;
@@ -15,11 +17,9 @@ import javafx.stage.Stage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-
 import java.io.*;
 import java.net.Socket;
 import java.util.HashMap;
-import org.apache.logging.log4j.core.LoggerContext;
 
 public class Main extends Application {
 

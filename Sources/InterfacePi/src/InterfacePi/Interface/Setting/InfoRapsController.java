@@ -4,8 +4,6 @@ import com.pi4j.system.SystemInfo;
 import eu.hansolo.medusa.Gauge;
 import eu.hansolo.medusa.GaugeBuilder;
 import eu.hansolo.medusa.Section;
-import eu.hansolo.medusa.tools.GradientLookup;
-import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -17,7 +15,6 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
-import javafx.scene.paint.Stop;
 import javafx.stage.Stage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -90,16 +87,6 @@ public class InfoRapsController {
             alert.setContentText("Fonction en cour de dévelopement...");
             alert.setHeaderText("Fonction non disponible");
             alert.show();
-//            try{
-//                ProcessBuilder killApp = new ProcessBuilder("sudo", "killall", "java");
-//                Process processKillApp = killApp.start();
-//                Thread.sleep(2000);
-//                processKillApp.destroy();
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
 
         }));
 
