@@ -1,0 +1,48 @@
+{
+    "description": "Arduino Library for the MCP23008 (and '9) I2C I/O expander", 
+    "repository": {
+        "url": "https://github.com/adafruit/Adafruit-MCP23008-library", 
+        "type": "git"
+    }, 
+    "platforms": [
+        "atmelavr", 
+        "atmelsam", 
+        "espressif8266", 
+        "intel_arc32", 
+        "microchippic32", 
+        "nordicnrf51", 
+        "teensy", 
+        "timsp430"
+    ], 
+    "export": {
+        "exclude": [
+            "extras", 
+            "docs", 
+            "tests", 
+            "test", 
+            "*.doxyfile", 
+            "*.pdf"
+        ], 
+        "include": null
+    }, 
+    "authors": [
+        {
+            "maintainer": true, 
+            "name": "Adafruit", 
+            "url": null, 
+            "email": "info@adafruit.com"
+        }
+    ], 
+    "keywords": [
+        "input", 
+        "signal", 
+        "output"
+    ], 
+    "id": 517, 
+    "name": "Adafruit MCP23008 library", 
+    "frameworks": [
+        "arduino"
+    ], 
+    "version": "1.0.1", 
+    "homepage": null
+}

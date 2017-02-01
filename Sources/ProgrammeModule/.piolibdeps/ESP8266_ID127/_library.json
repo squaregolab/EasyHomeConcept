@@ -1,0 +1,35 @@
+{
+    "name": "ESP8266", 
+    "repository": {
+        "url": "https://github.com/itead/ITEADLIB_Arduino_WeeESP8266.git", 
+        "type": "git"
+    }, 
+    "platforms": [
+        "atmelavr"
+    ], 
+    "frameworks": [
+        "arduino"
+    ], 
+    "version": "57bcc23020", 
+    "export": {
+        "exclude": "doc"
+    }, 
+    "authors": [
+        {
+            "maintainer": false, 
+            "name": "ITEAD Studio", 
+            "url": "https://github.com/itead", 
+            "email": "git@itead.cc"
+        }
+    ], 
+    "keywords": [
+        "web", 
+        "http", 
+        "wifi", 
+        "server", 
+        "client", 
+        "wi-fi"
+    ], 
+    "id": 127, 
+    "description": "ESP8266 offers a complete and self-contained Wi-Fi networking solution, allowing it to either host the application or to offload all Wi-Fi networking functions from another application processor"
+}
