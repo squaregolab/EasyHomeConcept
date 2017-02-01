@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import org.controlsfx.control.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.*?>
+<?import org.controlsfx.control.ToggleSwitch?>
+
+<VBox fx:id="vbox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InterfacePi.Interface.General.GeneralController">
+   <children>
+      <Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" style="-fx-background-color: black;">
+         <children>
+            <StackPane fx:id="stack">
+               <children>
+                  <HBox fx:id="HBox" alignment="CENTER" prefHeight="600.0" prefWidth="1024.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="142.0" spacing="20.0">
+                           <children>
+                              <Button fx:id="back" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: null;">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <ToggleButton fx:id="temp" mnemonicParsing="false" prefHeight="50.0" prefWidth="130.0" selected="true" text="Température">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="40.0" />
+                                 </VBox.margin>
+                              </ToggleButton>
+                              <ToggleButton fx:id="humidity" mnemonicParsing="false" prefHeight="50.0" prefWidth="130.0" selected="true" text="Humidité">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </ToggleButton>
+                              <ToggleButton fx:id="elec" mnemonicParsing="false" prefHeight="50.0" prefWidth="130.0" selected="true" text="Conso Elect">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </ToggleButton>
+                              <ToggleButton fx:id="water" mnemonicParsing="false" prefHeight="50.0" prefWidth="130.0" selected="true" text="Conso Eau">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </ToggleButton>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="vBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                           <children>
+                              <AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="550.0" prefWidth="884.0" style="-fx-background-color: white;" />
+                              <ToolBar nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="810.0">
+                                <items>
+                                    <ToggleButton fx:id="annee" mnemonicParsing="false" prefWidth="105.0" text="Année">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="toggleGroup" />
+                                       </toggleGroup>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </ToggleButton>
+                                  <ToggleButton fx:id="mois" mnemonicParsing="false" prefWidth="105.0" text="Mois" toggleGroup="$toggleGroup">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="semaine" mnemonicParsing="false" prefWidth="115.0" text="Semaine" toggleGroup="$toggleGroup">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="jour" mnemonicParsing="false" prefWidth="105.0" selected="true" text="Jour" toggleGroup="$toggleGroup">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="heure" mnemonicParsing="false" prefWidth="105.0" text="Heure" toggleGroup="$toggleGroup">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </ToggleButton>
+                                    <Label text="Nombre:">
+                                       <padding>
+                                          <Insets left="80.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <ChoiceBox fx:id="multi" prefHeight="25.0" prefWidth="78.0" />
+                                </items>
+                              </ToolBar>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </StackPane>
+         </children>
+      </Pane>
+   </children>
+</VBox>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="vbox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InterfacePi.Interface.Home.ControllerHome">
+   <children>
+      <Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" style="-fx-background-color: black;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="600.0" prefWidth="1024.0" spacing="125.0">
+               <children>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <Button fx:id="piece" mnemonicParsing="false" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: null;" />
+                        <Label text="Pièce(s)" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="600.0">
+                     <children>
+                        <Button fx:id="general" mnemonicParsing="false" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: null;" />
+                        <Label text="Général" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="600.0">
+                     <children>
+                        <Button fx:id="parametre" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: null;" />
+                        <Label text="Réglages" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</VBox>

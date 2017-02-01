@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import eu.hansolo.medusa.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import org.controlsfx.control.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.*?>
+<?import org.controlsfx.control.ToggleSwitch?>
+
+<StackPane fx:id="stack" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InterfacePi.Interface.Pieces.Controller">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" style="-fx-background-color: black;">
+         <children>
+            <HBox fx:id="leftAnchor" alignment="CENTER" prefHeight="300.0" prefWidth="1024.0" spacing="100.0">
+               <children>
+                  <Button fx:id="back" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: null;" />
+                  <VBox fx:id="leftUp" prefHeight="300.0" prefWidth="220.0" />
+                  <VBox fx:id="rigthUp" prefHeight="300.0" prefWidth="220.0" />
+                  <Button fx:id="home" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: null;" />
+               </children>
+            </HBox>
+            <HBox fx:id="bottomAnchor" layoutY="300.0">
+               <children>
+                  <VBox fx:id="leftBottom" alignment="CENTER" prefHeight="300.0" prefWidth="341.0" spacing="10.0">
+                     <children>
+                        <Label alignment="CENTER" style="-fx-text-fill: White;" text="Controle Volet" textAlignment="CENTER" underline="true">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <VBox alignment="CENTER" prefWidth="100.0">
+                           <children>
+                              <Label text="Etat:" textFill="WHITE">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="etatVolet" text="Ouvert" textFill="WHITE">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                        <HBox alignment="CENTER" prefWidth="200.0" spacing="60.0">
+                           <children>
+                              <Button fx:id="ouvrirVolet" disable="true" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Ouvrir">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="fermerVolet" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Fermer">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" />
+                           </padding>
+                        </HBox>
+                        <Button fx:id="stopVolet" disable="true" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Stop">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <StackPane>
+                     <children>
+                        <BorderPane fx:id="historique" prefHeight="200.0" prefWidth="200.0" visible="false">
+                           <center>
+                              <Button id="dark-blue" fx:id="historiqueButton" mnemonicParsing="false" prefHeight="79.0" prefWidth="200.0" stylesheets="@../button.css" text="Historique" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="26.0" />
+                                 </font>
+                              </Button>
+                           </center>
+                        </BorderPane>
+                        <VBox fx:id="LightBox" alignment="CENTER" prefHeight="300.0" prefWidth="341.0" spacing="20.0">
+                           <children>
+                              <Label text="Lumiere" textFill="WHITE" underline="true">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <ToggleSwitch fx:id="switchLumiere" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="81.0" style="-fx-font-size: 30;" />
+                              <Label fx:id="romName" alignment="CENTER" prefHeight="47.0" prefWidth="272.0" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="32.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </StackPane>
+                  <VBox fx:id="rightBottom" alignment="CENTER" prefHeight="300.0" prefWidth="341.0" spacing="18.0">
+                     <children>
+                        <Label alignment="CENTER" style="-fx-text-fill: White;" text="Réglage Chauffage" textAlignment="CENTER" underline="true">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER" spacing="20.0">
+                           <children>
+                              <Label fx:id="offChauffage" text="Off" textFill="WHITE">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Label>
+                              <ToggleSwitch fx:id="switchChauffage" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="71.0" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                              </ToggleSwitch>
+                              <Label fx:id="onChauffage" text="On">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Label fx:id="labelTempCible" alignment="CENTER" style="-fx-text-fill: white;" text="--">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="labelUnitTempCible" style="-fx-text-fill: white;" text=" °C">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Slider fx:id="sliderTemp" blockIncrement="1.0" disable="true" majorTickUnit="5.0" max="40.0" maxHeight="-Infinity" maxWidth="-Infinity" min="10.0" minHeight="-Infinity" minWidth="-Infinity" minorTickCount="4" prefWidth="341.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" style="thu: 20;" stylesheets="@sliderTemp.css" />
+                        <HBox alignment="CENTER" spacing="70.0">
+                           <children>
+                              <Button fx:id="validerTempCible" disable="true" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Valider" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="annulerTempCible" disable="true" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Annuler" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</StackPane>

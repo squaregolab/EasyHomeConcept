@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="error">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%d{HH:mm:ss.SSS}][%-5level]%logger{36}: %msg%n" />
+        </Console>
+        <RollingFile name="RollingFile" fileName="/home/pi/Interface/logs/domo.log"
+                     filePattern="/home/pi/Interface/logs/$${date:yyyy-MM}/domo-%d{yyyy-MM-dd-HH}-%i.log.gz">
+            <PatternLayout>
+                <Pattern>[%d{yyy-MM-dd ~ HH:mm:ss.SSS}][%-5level]%logger{36}: %msg%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <OnStartupTriggeringPolicy minSize="1B"/>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="250 MB"/>
+            </Policies>
+        </RollingFile>
+        <RollingFile name="RollingFileScript" fileName="/home/pi/Interface/logs/script/blynkScript.log"
+                     filePattern="/home/pi/Interface/logs/script/$${date:yyyy-MM}/blynkScript-%d{yyyy-MM-dd-HH}-%i.log.gz">
+            <PatternLayout>
+                <Pattern>[%d{yyy-MM-dd ~ HH:mm:ss.SSS}][%-5level]%logger{36}: %msg%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <OnStartupTriggeringPolicy minSize="1B"/>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="250 MB"/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <logger name="InterfacePi.Main$LauchScript" level="trace">
+            <AppenderRef ref="RollingFileScript"/>
+        </logger>
+        <Root level="debug">
+            <AppenderRef ref="Console" level="debug"/>
+            <AppenderRef ref="RollingFile" level="debug"/>
+        </Root>
+
+    </Loggers>
+</Configuration>

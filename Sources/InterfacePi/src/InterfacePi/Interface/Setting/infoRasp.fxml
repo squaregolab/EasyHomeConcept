@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import eu.hansolo.medusa.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="vbox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InterfacePi.Interface.Setting.InfoRapsController">
+   <children>
+      <Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" style="-fx-background-color: black;">
+         <children>
+            <VBox alignment="CENTER" prefHeight="600.0" prefWidth="1024.0" spacing="40.0">
+               <children>
+                  <HBox alignment="CENTER" prefWidth="1024.0" spacing="30.0">
+                     <children>
+                        <VBox fx:id="temp" prefHeight="300.0" prefWidth="300.0" />
+                        <VBox fx:id="memoire" prefHeight="300.0" prefWidth="300.0" />
+                     </children>
+                  </HBox>
+                  <Button id="dark-blue" fx:id="detail_Raspberry" mnemonicParsing="false" prefHeight="100.0" prefWidth="630.0" stylesheets="@../button.css" text="Detail Raspberry" textAlignment="CENTER">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+                  <Button id="dark-blue" fx:id="wifiSetting" mnemonicParsing="false" prefHeight="100.0" prefWidth="630.0" stylesheets="@../button.css" text="Reglage Wifi" textAlignment="CENTER">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <Button fx:id="back" layoutX="20.0" layoutY="20.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: null;" />
+         </children>
+      </Pane>
+   </children>
+</VBox>

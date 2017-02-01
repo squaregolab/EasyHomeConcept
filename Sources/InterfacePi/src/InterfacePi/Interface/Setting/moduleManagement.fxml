@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import org.controlsfx.control.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.*?>
+<?import org.controlsfx.control.ToggleSwitch?>
+
+<VBox fx:id="vbox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InterfacePi.Interface.Setting.ModuleController">
+   <children>
+      <StackPane fx:id="stack">
+         <children>
+            <Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" style="-fx-background-color: black;">
+               <children>
+                  <HBox fx:id="HBox" prefHeight="600.0" prefWidth="1024.0" spacing="10.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" spacing="20.0">
+                           <children>
+                              <Button fx:id="back" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: null;">
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="20.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="532.0" prefWidth="814.0" spacing="10.0" style="-fx-background-color: null;">
+                           <children>
+                              <ListView fx:id="listePieces" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="782.0" stylesheets="@../list.css" />
+                              <Button id="dark-blue" fx:id="addModulle" mnemonicParsing="false" prefHeight="69.0" prefWidth="306.0" stylesheets="@../button.css" text="Ajouter un module">
+                                 <font>
+                                    <Font name="System Bold" size="22.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+</VBox>
