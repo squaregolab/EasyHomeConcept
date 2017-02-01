@@ -3,4 +3,4 @@ config
 lib
 logs
 out
-.iml
+*.iml
