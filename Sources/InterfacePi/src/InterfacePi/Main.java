@@ -210,7 +210,7 @@ public class Main extends Application {
                     }
                     else
                     {
-                        if(temp<50)
+                        if(temp<55)
                         {
                             ventiloPin.high();
                             logger.debug("Stop fan!");
